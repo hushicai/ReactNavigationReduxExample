@@ -15,13 +15,19 @@ const styles = StyleSheet.create({
   },
 });
 
-const ProfileScreen = () => (
-  <View style={styles.container}>
-    <Text style={styles.welcome}>
-      Profile Screen
-    </Text>
-  </View>
-);
+const ProfileScreen = (props) => {
+  const {a, b} = props;
+
+  console.log('props', props);
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.welcome}>
+        Profile Screen
+      </Text>
+    </View>
+  );
+}
 
 ProfileScreen.navigationOptions = {
   title: 'Profile',
